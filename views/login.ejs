@@ -1,0 +1,27 @@
+<html>
+  <%- include('partials/header') %>
+  
+  <body>
+    <%- include('partials/status') %>
+    <div class="login">
+      <h1>Login</h1>
+      <p>Please enter your email and password to login.</p>
+      <p>If you dont have an account please register.</p>
+       
+      <form action="/login" method="POST">
+        <div class="regSeperator">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required autocomplete="off">
+        </div>
+        <br>
+        <div class="regSeperator">
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required autocomplete="off">
+        </div>
+        <br>
+        <input class="searchButton" type="submit" value="Login">
+      </form>
+    </div>
+  </body>
+  <%- include("partials/footer") %>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <%- include('partials/header') %>
+  <body>
+    <%- include('partials/status.ejs') %>
+    <div class="register">
+      <h1>Registration</h1>
+      <p>Thanks for choosing for Best Kind Electronics!</p>
+      <p>You will need an account to search the database.</p>
+      
+      <form action="/login/new" method="post">
+        <div class="regSeperator">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" required autocomplete="off">
+        </div>
+        <br>
+        <div class="regSeperator">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required autocomplete="new-email">
+        </div>
+        <br>
+        <div class="regSeperator">
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required autocomplete="off">
+        </div>
+        <br>
+        <input class="searchButton" type="submit" value="Register">
+      </form>
+    </div>
+  </body>
+  <%- include('partials/footer') %>
+</html>
